@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		@keyframes spin {
+			to {
+				transform: rotate(1turn);
+			}
+		}
+		@keyframes spin-revers {
+			from {
+				transform: rotate(1turn);
+			}
+		}
+		div {
+			width: 300px;
+			height: 300px;
+			background: #fb3;
+			border-radius: 100%;
+			margin: 100px auto;
+			animation: spin 3s infinite linear;
+			transform-origin: center 150px;
+		}
+		img {
+			width: 70px;
+			height: 70px;
+			margin: 50px;
+			border-radius: 100%;
+			animation: inherit;
+			animation-name: spin-revers;
+		}
+	</style>
+</head>
+<body>
+	<div class="path">
+		<img src="every.jpg" alt="" class="avatar">
+	</div>
+</body>
+</html>
